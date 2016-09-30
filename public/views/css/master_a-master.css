@@ -1,0 +1,31 @@
+#u963
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #000000;
+}
+
+#u963_align_to_page,#u964
+{
+	position: relative;
+}
+
+#u976
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u970-4,#u972-4,#u974-4,#u975-4
+{
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size: 10px;
+	line-height: 12px;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+	position: relative;
+}
+

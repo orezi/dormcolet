@@ -1,0 +1,777 @@
+.version.search /* version checker */
+{
+	color: #0000F4;
+	background-color: #35F4E3;
+}
+
+.html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 1024px;
+	min-height: 499.48299492385786px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	padding-bottom: 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hostel-title{
+	width: 600px !important;
+	font-size: 30px !important;
+	font-family: helvetica;
+	margin-bottom: 15px;
+}
+
+#page_position_content
+{
+	padding-top: 34px;
+	width: 0.01px;
+}
+
+#u1278
+{
+	z-index: 2000;
+	width: 1224px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	margin-left: -612px;
+}
+
+#pu1280
+{
+	width: 0.01px;
+	padding-bottom: 34px;
+	margin-right: -10000px;
+}
+
+#u1280
+{
+	z-index: 22;
+	height: 34px;
+	background-color: #000000;
+	opacity: 0.9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	position: fixed;
+	top: 0px;
+}
+
+#u1280-bw
+{
+	z-index: 22;
+}
+
+#u1284
+{
+	z-index: 23;
+	width: 21px;
+	height: 19px;
+	position: fixed;
+	top: 7px;
+	left: 50%;
+	margin-left: 410px;
+	background: transparent url("../images/instagram2-u1268-fr.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1284:hover
+{
+	width: 21px;
+	height: 19px;
+	min-height: 0px;
+	margin: 0px 0px 0px 410px;
+	background: transparent url("../images/instagram2-u1268-r-fr.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1286
+{
+	z-index: 24;
+	width: 21px;
+	height: 20px;
+	position: fixed;
+	top: 7px;
+	left: 50%;
+	margin-left: 437px;
+	background: transparent url("../images/twitter-u1270-fr.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1286:hover
+{
+	width: 21px;
+	height: 20px;
+	min-height: 0px;
+	margin: 0px 0px 0px 437px;
+	background: transparent url("../images/twitter-u1270-r-fr.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1279
+{
+	z-index: 25;
+	width: 21px;
+	height: 20px;
+	position: fixed;
+	top: 7px;
+	left: 50%;
+	margin-left: 464px;
+	background: transparent url("../images/facebook-u1263-fr.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1279:hover
+{
+	width: 21px;
+	height: 20px;
+	min-height: 0px;
+	margin: 0px 0px 0px 464px;
+	background: transparent url("../images/facebook-u1263-r-fr.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1291
+{
+	z-index: 26;
+	width: 21px;
+	height: 20px;
+	position: fixed;
+	top: 7px;
+	left: 50%;
+	margin-left: 491px;
+	background: transparent url("../images/youtube-u1275-fr.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1291:hover
+{
+	width: 21px;
+	height: 20px;
+	min-height: 0px;
+	margin: 0px 0px 0px 491px;
+	background: transparent url("../images/youtube-u1275-r-fr.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1287
+{
+	z-index: 27;
+	width: 115px;
+	height: 18px;
+	position: fixed;
+	top: 7px;
+	left: 50%;
+	margin-left: 282px;
+	background: transparent url("../images/list%20your%20property%20button-custom%20normal.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1287:hover
+{
+	width: 115px;
+	height: 18px;
+	min-height: 0px;
+	margin: 0px 0px 0px 282px;
+	background: transparent url("../images/list%20your%20property%20button-custom%20active.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1290
+{
+	z-index: 28;
+	width: 90px;
+	height: 18px;
+	position: fixed;
+	top: 7px;
+	left: 50%;
+	margin-left: 185px;
+	background: transparent url("../images/sign%20in2-custom%20normal.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u1290:hover
+{
+	width: 90px;
+	height: 18px;
+	min-height: 0px;
+	margin: 0px 0px 0px 185px;
+	background: transparent url("../images/sign%20in2-custom%20active.png") no-repeat left top;
+	background-size: contain;
+}
+
+#pu1288
+{
+	width: 0.01px;
+	margin-right: -10000px;
+	margin-left: 91px;
+}
+
+#u1288
+{
+	z-index: 35;
+	overflow: hidden;
+	position: relative;
+	width: 108px;
+	margin-right: -10000px;
+	margin-top: 3px;
+}
+
+#pu1285
+{
+	z-index: 29;
+	width: 0.01px;
+	position: relative;
+	margin-right: -10000px;
+	margin-left: 498px;
+}
+
+#u1285
+{
+	z-index: 0;
+	width: 190px;
+	background-color: #000000;
+	opacity: 0.4;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity=40);
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+}
+
+#pu1281
+{
+	width: 0.01px;
+	position: relative;
+	left: 24px;
+	padding-top: 9px;
+	z-index: 2;
+	padding-bottom: 11px;
+}
+
+#u1281
+{
+	z-index: 34;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u1283-4
+{
+	z-index: 30;
+	width: 125px;
+	min-height: 14px;
+	background-color: transparent;
+	line-height: 13px;
+	color: #9B9B9B;
+	font-size: 11px;
+	text-align: center;
+	font-family: open-sans, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	left: 20px;
+}
+
+#u1283-4:hover
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 14px;
+	width: 123px;
+	margin: 0px -10000px 0px 0px;
+}
+
+#u1283-4:hover p
+{
+	color: #FFFFFF;
+	visibility: inherit;
+}
+
+#u1300
+{
+	z-index: 36;
+	height: 59px;
+	background-color: #1A1A1A;
+}
+
+#u1300-bw
+{
+	z-index: 36;
+	height: 59px;
+}
+
+#u1301
+{
+	z-index: 37;
+	width: 390px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #F05D4A;
+	background-color: #FFFFFF;
+	margin-left: 19px;
+	margin-top: 10px;
+	position: relative;
+}
+
+#u1335-4
+{
+	z-index: 41;
+	width: 243px;
+	min-height: 18px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	line-height: 14px;
+	color: #7F7F7F;
+	font-size: 12px;
+	text-align: left;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 11px;
+	left: 16px;
+}
+
+#u1329
+{
+	z-index: 38;
+	width: 44px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	margin-bottom: -2px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: -2px;
+	left: 348px;
+}
+
+#u1302
+{
+	z-index: 39;
+	width: 40px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #F05D4A;
+	background-color: #F05D4A;
+	padding-bottom: 4px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u1303
+{
+	z-index: 40;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #F05D4A;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 4px;
+	left: 7px;
+}
+
+#u1339
+{
+	z-index: 45;
+	width: 984px;
+	height: 5px;
+	border-style: solid;
+	border-color: #7F7F7F;
+	background-color: transparent;
+	opacity: 0.47;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=47)";
+	filter: alpha(opacity=47);
+	margin-left: 20px;
+	margin-top: 11px;
+	position: relative;
+	border-width: 1px 0px 0px;
+}
+
+#pu1366
+{
+	width: 0.01px;
+	margin-left: 20px;
+	margin-top: 26px;
+}
+
+#u1366
+{
+	z-index: 46;
+	width: 448px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u1366:hover
+{
+	opacity: 0.8;
+}
+
+#u1338
+{
+	z-index: 70;
+	width: 161px;
+	height: 131px;
+	position: relative;
+	margin-right: -10000px;
+	background: transparent url("../images/luxury_apartment_branding-u1338-fr.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#u1340-4
+{
+	z-index: 47;
+	width: 192px;
+	min-height: 31px;
+	background-color: transparent;
+	color: #F05D4A;
+	font-size: 23px;
+	line-height: 28px;
+	font-family: open-sans, sans-serif;
+	font-weight: 700;
+	position: relative;
+}
+
+#u1341-12
+{
+	z-index: 51;
+	width: 263px;
+	min-height: 98px;
+	background-color: transparent;
+	color: #525252;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u1364
+{
+	z-index: 63;
+	width: 178px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 75px;
+}
+
+#u1347
+{
+	z-index: 66;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 1px;
+}
+
+#u1351
+{
+	z-index: 68;
+	position: relative;
+	margin-right: -10000px;
+	left: 29px;
+}
+
+#u1355
+{
+	z-index: 69;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 1px;
+	left: 62px;
+}
+
+#u1349
+{
+	z-index: 65;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 2px;
+	left: 95px;
+}
+
+#u1343
+{
+	z-index: 64;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 3px;
+	left: 129px;
+}
+
+#u1353
+{
+	z-index: 67;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 1px;
+	left: 160px;
+}
+
+#u1367
+{
+	z-index: 71;
+	width: 448px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	left: 502px;
+}
+
+#u1367:hover
+{
+	opacity: 0.8;
+}
+
+#u1383
+{
+	z-index: 95;
+	width: 161px;
+	height: 131px;
+	position: relative;
+	margin-right: -10000px;
+	background: transparent url("../images/luxury_apartment_branding-u1338-fr.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#pu1340-4,#pu1382-4
+{
+	width: 0.01px;
+	margin-right: -10000px;
+	margin-left: 185px;
+}
+
+#u1382-4
+{
+	z-index: 72;
+	width: 192px;
+	min-height: 31px;
+	background-color: transparent;
+	color: #F05D4A;
+	font-size: 23px;
+	line-height: 28px;
+	font-family: open-sans, sans-serif;
+	font-weight: 700;
+	position: relative;
+}
+
+#u1340,#u1382
+{
+	font-size: 23px;
+	color: #F05D4A;
+}
+
+#pu1341-12,#pu1381-12
+{
+	width: 0.01px;
+	margin-top: 2px;
+}
+
+#u1381-12
+{
+	z-index: 76;
+	width: 263px;
+	min-height: 98px;
+	background-color: transparent;
+	color: #525252;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u1341-3,#u1381-3
+{
+	font-size: 10px;
+	line-height: 20px;
+	font-family: open-sans, sans-serif;
+	font-weight: 300;
+}
+
+#u1341-2,#u1381-2
+{
+	color: #F05D4A;
+	font-family: open-sans, sans-serif;
+	font-weight: 700;
+}
+
+#u1341-5,#u1341-8,#u1381-5,#u1381-8
+{
+	font-family: open-sans, sans-serif;
+	font-weight: 300;
+}
+
+#u1341-6,#u1341-9,#u1341-10,#u1381-6,#u1381-9,#u1381-10
+{
+	font-size: 12px;
+	line-height: 24px;
+	font-family: open-sans, sans-serif;
+	font-weight: 800;
+}
+
+#u1368
+{
+	z-index: 88;
+	width: 178px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 75px;
+}
+
+#u1369
+{
+	z-index: 91;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 1px;
+}
+
+#u1379
+{
+	z-index: 93;
+	position: relative;
+	margin-right: -10000px;
+	left: 29px;
+}
+
+#u1375
+{
+	z-index: 94;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 1px;
+	left: 62px;
+}
+
+#u1377
+{
+	z-index: 90;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 2px;
+	left: 95px;
+}
+
+#u1373
+{
+	z-index: 89;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 3px;
+	left: 129px;
+}
+
+#u1371
+{
+	z-index: 92;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 1px;
+	left: 160px;
+}
+
+#u963
+{
+	z-index: 2;
+	min-height: 73px;
+	padding-bottom: 21px;
+}
+
+#u963_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+	left: -100px;
+}
+
+#u964
+{
+	z-index: 3;
+	margin-right: -10000px;
+	margin-top: 21px;
+	left: 120px;
+}
+
+#u976
+{
+	z-index: 4;
+	width: 253px;
+	margin-right: -10000px;
+	margin-top: 46px;
+	left: 851px;
+}
+
+#u970-4
+{
+	z-index: 5;
+	width: 29px;
+	min-height: 17px;
+	margin-right: -10000px;
+}
+
+#u972-4
+{
+	z-index: 9;
+	width: 38px;
+	min-height: 17px;
+	margin-right: -10000px;
+	left: 48px;
+}
+
+#u974-4
+{
+	z-index: 13;
+	width: 93px;
+	min-height: 17px;
+	margin-right: -10000px;
+	left: 105px;
+}
+
+#u975-4
+{
+	z-index: 17;
+	width: 36px;
+	min-height: 17px;
+	margin-right: -10000px;
+	left: 217px;
+}
+
+#u963-bw
+{
+	z-index: 2;
+	min-height: 73px;
+	margin-top: 91px;
+}
+
+body
+{
+	position: relative;
+	min-width: 1024px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

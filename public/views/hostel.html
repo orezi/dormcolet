@@ -1,0 +1,457 @@
+<div class="clearfix" id="page" ng-controller="homeCtrl" data-ng-init="getHostel(); getRoomsForHostel(); signupCheck();">
+  <!-- column -->
+  <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="pu1009">
+      <!-- group -->
+      <div class="browser_width grpelem" id="u1009-bw">
+        <div class="museBGSize" id="u1009">
+          <!-- group -->
+          <div class="clearfix" id="u1009_align_to_page">
+            <div class="clearfix grpelem" id="u1035">
+              <!-- group -->
+              <div class="grpelem" id="pu1013">
+                <!-- inclusion -->
+                <div id="u1013">
+                  <!-- simple frame -->
+                </div>
+                <div class="clearfix" id="pu1034">
+                  <!-- group -->
+                  <div class="clearfix grpelem" id="u1034">
+                    <!-- column -->
+                    <div class="clearfix colelem" id="u1018-4">
+                      <!-- content -->
+                      <p><span id="u1018">{{hostel.name}}</span></p>
+                    </div>
+                    <div class="colelem" id="u1019">
+                      <!-- simple frame -->
+                    </div>
+                    <div class="clearfix colelem" id="pu1020">
+                      <!-- group -->
+                      <div class="shadow clearfix grpelem" id="u1020">
+                        <!-- group -->
+                        <div class="clearfix grpelem" id="u1021-4">
+                          <!-- content -->
+                          <p>{{hostel.schoolRef.name}}</p>
+                        </div>
+                      </div>
+                      <div class="shadow clearfix grpelem" id="u1023">
+                        <!-- group -->
+                        <div class="clearfix grpelem" id="u1022-4">
+                          <!-- content -->
+                          <p>Verified</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix colelem" id="pu1029">
+                      <!-- group -->
+                      <img class="svg grpelem" id="u1029" src="images/pin-07.svg" width="14" height="15" alt="" data-mu-svgfallback="images/pin-07_poster_.png" />
+                      <!-- svg -->
+                      <div class="clearfix grpelem" id="u1025-5">
+                        <!-- content -->
+                        <p>{{hostel.location}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="PamphletWidget clearfix widget_invisible grpelem" id="pamphletu1039">
+        <!-- none box -->
+        <div class="ThumbGroup clearfix grpelem" id="u1051">
+          <!-- none box -->
+          <div class="popup_anchor">
+            <div class="Thumb popup_element museBGSize" id="u1052">
+              <!-- simple frame -->
+            </div>
+          </div>
+          <div class="popup_anchor">
+            <div class="Thumb popup_element museBGSize" id="u1054">
+              <!-- simple frame -->
+            </div>
+          </div>
+          <div class="popup_anchor">
+            <div class="Thumb popup_element museBGSize" id="u1053">
+              <!-- simple frame -->
+            </div>
+          </div>
+          <div class="popup_anchor">
+            <div class="Thumb popup_element museBGSize" id="u1058">
+              <!-- simple frame -->
+            </div>
+          </div>
+          <div class="popup_anchor">
+            <div class="Thumb popup_element museBGSize" id="u1061">
+              <!-- simple frame -->
+            </div>
+          </div>
+        </div>
+        <div class="popup_anchor" id="u1044popup">
+          <div class="ContainerGroup rgba-background clearfix" id="u1044">
+            <!-- stack box -->
+            <div class="Container museBGSize clearfix grpelem" id="u1049">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u1050-4">
+                <!-- content -->
+                <p id="u1050-2">Room 1: Beautiful single man room with air-conditioning. En-suite.</p>
+              </div>
+            </div>
+            <div class="Container invi museBGSize clearfix grpelem" id="u1045">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u1100-4">
+                <!-- content -->
+                <p id="u1100-2">Room 1: Beautiful single man room with air-conditioning. En-suite.</p>
+              </div>
+            </div>
+            <div class="Container invi museBGSize clearfix grpelem" id="u1047">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u1101-4">
+                <!-- content -->
+                <p id="u1101-2">Room 1: Beautiful single man room with air-conditioning. En-suite.</p>
+              </div>
+            </div>
+            <div class="Container invi museBGSize clearfix grpelem" id="u1059">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u1105-4">
+                <!-- content -->
+                <p id="u1105-2">Room 1: Beautiful single man room with air-conditioning. En-suite.</p>
+              </div>
+            </div>
+            <div class="Container invi museBGSize clearfix grpelem" id="u1062">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u1109-4">
+                <!-- content -->
+                <p id="u1109-2">Room 1: Beautiful single man room with air-conditioning. En-suite.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup_anchor">
+          <div class="PamphletPrevButton PamphletLightboxPart popup_element clearfix" id="u1042">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1043-4">
+              <!-- content -->
+              <p id="u1043-2"><span id="u1043">&lt;</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="popup_anchor">
+          <div class="PamphletNextButton PamphletLightboxPart popup_element clearfix" id="u1040">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1041-4">
+              <!-- content -->
+              <p id="u1041-2"><span id="u1041">&gt;</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="popup_anchor">
+          <div class="PamphletCloseButton PamphletLightboxPart popup_element clearfix" id="u1055">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1056-4">
+              <!-- content -->
+              <p>x</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix colelem" id="pu1204">
+      <!-- group -->
+      <div class="clearfix grpelem" id="u1204">
+        <!-- column -->
+        <div class="clearfix colelem" id="u1113-12">
+          <!-- content -->
+          <p id="u1113-3">Available from <span id="u1113-2">January, 2016</span></p>
+          <p id="u1113-4">&nbsp;</p>
+          <p id="u1113-7"><span id="u1113-5">7.0km </span><span id="u1113-6">from {{ hostel.schoolRef.name}}</span></p>
+          <p id="u1113-10"><span id="u1113-8">50+</span><span id="u1113-9"> rooms available</span></p>
+        </div>
+        <div class="clearfix colelem" id="u1201">
+          <!-- group -->
+          <img class="svg grpelem" id="u1138" src="images/star.svg" width="25" height="24" alt="" data-mu-svgfallback="images/star_poster_.png" />
+          <!-- svg -->
+          <img class="svg grpelem" id="u1144" src="images/star.svg" width="25" height="24" alt="" data-mu-svgfallback="images/star_poster_.png" />
+          <!-- svg -->
+          <img class="svg grpelem" id="u1147" src="images/star.svg" width="25" height="24" alt="" data-mu-svgfallback="images/star_poster_.png" />
+          <!-- svg -->
+          <img class="svg grpelem" id="u1150" src="images/star.svg" width="25" height="24" alt="" data-mu-svgfallback="images/star_poster_.png" />
+          <!-- svg -->
+          <img class="svg grpelem" id="u1153" src="images/star%20off.svg" width="25" height="24" alt="" data-mu-svgfallback="images/star%20off_poster_.png" />
+          <!-- svg -->
+        </div>
+        <div class="colelem" id="u1137">
+          <!-- simple frame -->
+        </div>
+        <div class="clearfix colelem" id="u1164-7">
+          <!-- content -->
+          <p id="u1164-5"><span id="u1164">from </span><span id="u1164-2">N240,000 </span><span id="u1164-3">per annum</span><span id="u1164-4"></span></p>
+        </div>
+        <div class="shadow clearfix colelem" id="u1167">
+          <!-- group -->
+          <div class="clearfix grpelem" id="u1168-4">
+            <!-- content -->
+            <p>Request Tour</p>
+          </div>
+        </div>
+        <div class="clearfix colelem" id="u1177-4">
+          <!-- content -->
+          <p><span id="u1177">{{hostel.description}}</span></p>
+        </div>
+        <div class="clearfix colelem" id="u1200">
+          <!-- group -->
+          <div class="clearfix grpelem" id="pu1181">
+            <!-- column -->
+            <img class="svg colelem" id="u1181" title="Free Wi-Fi" src="images/wifi-14.svg" width="17" height="17" alt="" data-mu-svgfallback="images/wifi-14_poster_.png" />
+            <!-- svg -->
+            <img class="svg colelem" id="u1191" title="Air Conditioning" src="images/icons-17.svg" width="15" height="15" alt="" data-mu-svgfallback="images/icons-17_poster_.png" />
+            <!-- svg -->
+          </div>
+          <div class="clearfix grpelem" id="pu1183">
+            <!-- column -->
+            <img class="svg colelem" id="u1183" title="Single Rooms" src="images/icons-15.svg" width="22" height="22" alt="" data-mu-svgfallback="images/icons-15_poster_.png" />
+            <!-- svg -->
+            <img class="svg colelem" id="u1189" title="Security" src="images/logo-20.svg" width="18" height="18" alt="" data-mu-svgfallback="images/logo-20_poster_.png" />
+            <!-- svg -->
+          </div>
+          <div class="clearfix grpelem" id="pu1187">
+            <!-- column -->
+            <img class="svg colelem" id="u1187" title="Shared Rooms" src="images/icons-16.svg" width="22" height="22" alt="" data-mu-svgfallback="images/icons-16_poster_.png" />
+            <!-- svg -->
+            <img class="svg colelem" id="u1185" title="24/7 Power" src="images/icons-19.svg" width="15" height="15" alt="" data-mu-svgfallback="images/icons-19_poster_.png" />
+            <!-- svg -->
+          </div>
+          <img class="svg grpelem" id="u1179" title="Entertainment System" src="images/icons-18.svg" width="18" height="18" alt="" data-mu-svgfallback="images/icons-18_poster_.png" />
+          <!-- svg -->
+        </div>
+      </div>
+      <div class="grpelem" id="u1110">
+        <!-- custom html -->
+        <iframe class="actAsDiv" width="620" height="493" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=23%2C%20moore%20road%2C%20yaba%2C%20lagos%20&amp;aq=0&amp;ie=UTF8&amp;t=m&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe>
+      </div>
+      <div class="grpelem" id="u1112">
+        <!-- simple frame -->
+      </div>
+    </div>
+    <div class="clearfix colelem" id="u1220-4">
+      <!-- content -->
+      <p>OUR ROOMS</p>
+    </div>
+    <div class="colelem" id="u1221">
+      <!-- simple frame -->
+    </div>
+    <div class="clearfix colelem" id="pu1222">
+      <!-- group -->
+      <div class="museBGSize grpelem" id="u1222">
+        <!-- simple frame -->
+      </div>
+      <div class="museBGSize grpelem" id="u1224">
+        <!-- simple frame -->
+      </div>
+      <div class="museBGSize grpelem" id="u1223">
+        <!-- simple frame -->
+      </div>
+      <div class="museBGSize grpelem" id="u1225">
+        <!-- simple frame -->
+      </div>
+    </div>
+    <div class="clearfix colelem" id="pu1226-4">
+      <!-- group -->
+      <div ng-if="rooms[0]" class="clearfix grpelem" id="u1226-4">
+        <p><span id="u1226">{{rooms[0].description}}</span></p>
+        Price: <p><span id="u1226">N{{ rooms[0].price}}</span></p>
+      </div>
+      <div ng-if="rooms[1]" class="clearfix grpelem" id="u1227-4">
+        <!-- content -->
+        <p><span id="u1227">{{rooms[1].description}}</span></p>
+        Price: <p><span id="u1226">N{{ rooms[1].price}}</span></p>
+      </div>
+      <div ng-if="rooms[2]" class="clearfix grpelem" id="u1228-4">
+        <!-- content -->
+        <p><span id="u1228">{{rooms[2].description}}</span></p>
+        Price: <p><span id="u1226">N{{ rooms[2].price}}</span></p>
+      </div>
+      <div ng-if="rooms[3]" class="clearfix grpelem" id="u1229-4">
+        <!-- content -->
+        <p><span id="u1229">{{rooms[3].description}}</span></p>
+        Price: <p><span id="u1226">N{{ rooms[3].price}}</span></p>
+      </div>
+    </div>
+    <div class="clearfix colelem" id="pu1230">
+      <!-- group -->
+      <div ng-if="firstname" class="shadow clearfix grpelem" id="u1230">
+        <!-- group -->
+        <form method='POST' action='https://voguepay.com/pay/'>
+          <input type='hidden' name='v_merchant_id' value='9002-0043668' />
+          <input type='hidden' name='memo' value='Book room from Dormcolet' />
+          <input type='hidden' name='total' value='{{rooms[0].price}}' />
+          <input type='image' src='images/booknowBtn.jpg' alt='Submit' />
+        </form>
+      </div>
+      <div ng-if="!firstname" class="shadow clearfix grpelem" id="u1230">
+        <!-- group -->
+        <form method='POST' action='https://voguepay.com/pay/'>
+          <input type='hidden' name='v_merchant_id' value='9002-0043668' />
+          <input type='hidden' name='memo' value='Book room from Dormcolet' />
+          <input type='hidden' name='total' value='{{rooms[0].price}}' />
+          <input type='image' ui-sref="authenticate" src='images/booknowBtn.jpg' />
+        </form>
+      </div>
+      <div ng-if="firstname" class="shadow clearfix grpelem" id="u1232">
+        <!-- group -->
+        <form method='POST' action='https://voguepay.com/pay/'>
+          <input type='hidden' name='v_merchant_id' value='9002-0043668' />
+          <input type='hidden' name='memo' value='Book room from Dormcolet' />
+          <input type='hidden' name='total' value='{{rooms[1].price}}' />
+          <input type='image' src='images/booknowBtn.jpg' alt='Submit' />
+        </form>
+      </div>
+      <div ng-if="!firstname" class="shadow clearfix grpelem" id="u1232">
+        <!-- group -->
+        <form method='POST' action='https://voguepay.com/pay/'>
+          <input type='hidden' name='v_merchant_id' value='9002-0043668' />
+          <input type='hidden' name='memo' value='Book room from Dormcolet' />
+          <input type='hidden' name='total' value='{{rooms[1].price}}' />
+          <input type='image' ui-sref="authenticate" src='images/booknowBtn.jpg' />
+        </form>
+      </div>
+      <div ng-if="firstname" class="shadow clearfix grpelem" id="u1234">
+        <!-- group -->
+        <form method='POST' action='https://voguepay.com/pay/'>
+          <input type='hidden' name='v_merchant_id' value='9002-0043668' />
+          <input type='hidden' name='memo' value='Book room from Dormcolet' />
+          <input type='hidden' name='total' value='{{rooms[2].price}}' />
+          <input type='image' src='images/booknowBtn.jpg' alt='Submit' />
+        </form>
+      </div>
+      <div ng-if="!firstname" class="shadow clearfix grpelem" id="u1234">
+        <!-- group -->
+        <form method='POST' action='https://voguepay.com/pay/'>
+          <input type='hidden' name='v_merchant_id' value='9002-0043668' />
+          <input type='hidden' name='memo' value='Book room from Dormcolet' />
+          <input type='hidden' name='total' value='{{rooms[2].price}}' />
+          <input type='image' ui-sref="authenticate" src='images/booknowBtn.jpg' />
+        </form>
+      </div>
+      <div ng-if="firstname" class="shadow clearfix grpelem" id="u1236">
+        <!-- group -->
+        <form method='POST' action='https://voguepay.com/pay/'>
+          <input type='hidden' name='v_merchant_id' value='9002-0043668' />
+          <input type='hidden' name='memo' value='Book room from Dormcolet' />
+          <input type='hidden' name='total' value='{{rooms[3].price}}' />
+          <input type='image' src='images/booknowBtn.jpg' alt='Submit' />
+        </form>
+      </div>
+      <div ng-if="!firstname" class="shadow clearfix grpelem" id="u1236">
+        <!-- group -->
+        <form method='POST' action='https://voguepay.com/pay/'>
+          <input type='hidden' name='v_merchant_id' value='9002-0043668' />
+          <input type='hidden' name='memo' value='Book room from Dormcolet' />
+          <input type='hidden' name='total' value='{{rooms[3].price}}' />
+          <input type='image' ui-sref="authenticate" src='images/booknowBtn.jpg' />
+        </form>
+      </div>
+    </div>
+    <div class="verticalspacer"></div>
+  </div>
+</div>
+<div class="preload_images">
+  <img class="preload" src="images/instagram2-u993-r-fr.png" alt="" />
+  <img class="preload" src="images/twitter-u994-r-fr.png" alt="" />
+  <img class="preload" src="images/facebook-u988-r-fr.png" alt="" />
+  <img class="preload" src="images/youtube-u989-r-fr.png" alt="" />
+  <img class="preload" src="images/list%20your%20property%20button-custom%20active.png" alt="" />
+  <img class="preload" src="images/sign%20in2-custom%20active.png" alt="" />
+  <img class="preload" src="images/large-u1052-fr.jpg" alt="" />
+</div>
+<!-- JS includes -->
+<script type="text/javascript">
+if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+<script type="text/javascript">
+window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+<script src="scripts/museutils.js?334180058" type="text/javascript"></script>
+<script src="scripts/jquery.musepolyfill.bgsize.js?35732776" type="text/javascript"></script>
+<script src="scripts/jquery.watch.js?293013060" type="text/javascript"></script>
+<script src="scripts/webpro.js?7309900" type="text/javascript"></script>
+<script src="scripts/musewpslideshow.js?4149944274" type="text/javascript"></script>
+<script src="scripts/jquery.museoverlay.js?4282111687" type="text/javascript"></script>
+<script src="scripts/touchswipe.js?526709374" type="text/javascript"></script>
+<!-- Other scripts -->
+<script type="text/javascript">
+$(document).ready(function() {
+  try {
+    (function() {
+      var a = {},
+        b = function(a) {
+          if (a.match(/^rgb/)) return a = a.replace(/\s+/g, "").match(/([\d\,]+)/gi)[0].split(","), (parseInt(a[0]) << 16) + (parseInt(a[1]) << 8) + parseInt(a[2]);
+          if (a.match(/^\#/)) return parseInt(a.substr(1), 16);
+          return 0
+        };
+      (function() {
+        $('link[type="text/css"]').each(function() {
+          var b = ($(this).attr("href") || "").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);
+          b && b[1] && b[2] && (a[b[1]] = b[2])
+        })
+      })();
+      (function() {
+        $("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+        for (var c = $(".version"), d = 0; d < Muse.assets.required.length;) {
+          var f = Muse.assets.required[d],
+            g = f.match(/([\w\-\.]+)\.(\w+)$/),
+            k = g && g[1] ? g[1] : null,
+            g = g && g[2] ? g[2] : null;
+          switch (g.toLowerCase()) {
+            case "css":
+              k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
+              c.addClass(k);
+              var g = b(c.css("color")),
+                h = b(c.css("background-color"));
+              g != 0 || h != 0 ? (Muse.assets.required.splice(d, 1), "undefined" != typeof a[f] && (g != a[f] >>> 24 || h != (a[f] & 16777215)) && Muse.assets.outOfDate.push(f)) : d++;
+              c.removeClass(k);
+              break;
+            case "js":
+              k.match(/^jquery-[\d\.]+/gi) &&
+                typeof $ != "undefined" ? Muse.assets.required.splice(d, 1) : d++;
+              break;
+            default:
+              throw Error("Unsupported file type: " + g);
+          }
+        }
+        c.remove();
+        if (Muse.assets.outOfDate.length || Muse.assets.required.length) c = "Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.", (d = location && location.search && location.search.match && location.search.match(/muse_debug/gi)) && Muse.assets.outOfDate.length && (c += "\nOut of date: " + Muse.assets.outOfDate.join(",")), d && Muse.assets.required.length && (c += "\nMissing: " + Muse.assets.required.join(",")), alert(c)
+      })()
+    })();
+    /* body */
+    Muse.Utils.transformMarkupToFixBrowserProblemsPreInit(); /* body */
+    Muse.Utils.prepHyperlinks(true); /* body */
+    Muse.Utils.resizeHeight() /* resize height */
+    Muse.Utils.initWidget('#pamphletu1039', function(elem) {
+      new WebPro.Widget.ContentSlideShow(elem, {
+        contentLayout_runtime: 'lightbox',
+        event: 'click',
+        deactivationEvent: 'none',
+        autoPlay: false,
+        displayInterval: 3000,
+        transitionStyle: 'fading',
+        transitionDuration: 500,
+        hideAllContentsFirst: false,
+        shuffle: false,
+        enableSwipe: true,
+        resumeAutoplay: true,
+        resumeAutoplayInterval: 3000,
+        playOnce: false,
+        autoActivate_runtime: false
+      });
+    }); /* #pamphletu1039 */
+    Muse.Utils.fullPage('#page'); /* 100% height page */
+    Muse.Utils.showWidgetsWhenReady(); /* body */
+    Muse.Utils.transformMarkupToFixBrowserProblems(); /* body */
+  } catch (e) {
+    if (e && 'function' == typeof e.notify) e.notify();
+    else Muse.Assert.fail('Error calling selector function:' + e);
+  }
+});
+</script>

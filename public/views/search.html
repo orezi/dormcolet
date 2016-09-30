@@ -1,0 +1,181 @@
+<div class="clearfix" style="margin-top: 35px;" id="page" ng-controller="homeCtrl" data-ng-init="getHostelsForSchool(); getAllSchools();">
+  <!-- column -->
+  <div class="position_content" id="page_position_content">
+    <div layout="row">
+      <!-- svg -->
+      <select class="clearfix colelem" id="u1301">
+        <option selected="">University</option>
+        <option>Covenant University</option>
+        <option>Bowen University</option>
+        <option>Babcock University</option>
+      </select>
+      <div class="shadow clearfix colelem" id="uu247" ng-click=searchHostelsForSchoolView(schools)>
+        <!-- group -->
+        <div class="clearfix grpelem" id="uu259-4">
+          <!-- content -->
+          <p>SEARCH</p>
+        </div>
+      </div>
+    </div>
+    <div class="colelem" id="u1339">
+      <!-- simple frame -->
+    </div>
+    <div class="clearfix colelem" id="pu1366">
+      <!-- group -->
+      <div ng-if=!schoolHostels[0] class="hostel-title">No hostels listed for this school yet</div>
+      <div ng-if="schoolHostels[0]" class="clearfix grpelem" id="u1366" ng-click=openHostelDetailView(schoolHostels[0]._id)>
+        <!-- group -->
+        <div class="museBGSize grpelem" id="u1338">
+          <!-- simple frame -->
+        </div>
+        <div class="clearfix grpelem" id="pu1340-4">
+          <!-- column -->
+          <div class="clearfix colelem" id="u1340-4">
+            <!-- content -->
+            <p><span id="u1340">{{schoolHostels[0].name}}</span></p>
+          </div>
+          <div class="clearfix colelem" id="pu1341-12">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1341-12">
+              <!-- content -->
+              <p id="u1341-3">Available from <span id="u1341-2">January, 2016</span></p>
+              <p id="u1341-6">11.0km <span id="u1341-5">from {{schoolHostels[0].schoolRef.name}}</span></p>
+              <p id="u1341-9">20+<span id="u1341-8"> rooms available</span></p>
+              <p id="u1341-10">&nbsp;</p>
+            </div>
+            <div class="clearfix grpelem" id="u1364">
+              <!-- group -->
+              <img class="svg grpelem" id="u1347" title="Free Wi-Fi" src="images/wifi-14.svg" width="17" height="17" alt="" data-mu-svgfallback="images/wifi-14_poster_.png" />
+              <!-- svg -->
+              <img class="svg grpelem" id="u1351" title="Single Rooms" src="images/icons-15.svg" width="22" height="22" alt="" data-mu-svgfallback="images/icons-15_poster_.png" />
+              <!-- svg -->
+              <img class="svg grpelem" id="u1355" title="Shared Rooms" src="images/icons-16.svg" width="22" height="22" alt="" data-mu-svgfallback="images/icons-16_poster_.png" />
+              <!-- svg -->
+              <img class="svg grpelem" id="u1349" title="Entertainment System" src="images/icons-18.svg" width="18" height="18" alt="" data-mu-svgfallback="images/icons-18_poster_.png" />
+              <!-- svg -->
+              <img class="svg grpelem" id="u1343" title="Air Conditioning" src="images/icons-17.svg" width="15" height="15" alt="" data-mu-svgfallback="images/icons-17_poster_.png" />
+              <!-- svg -->
+              <img class="svg grpelem" id="u1353" title="Security" src="images/logo-20.svg" width="18" height="18" alt="" data-mu-svgfallback="images/logo-20_poster_.png" />
+              <!-- svg -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ng-if="schoolHostels[1]" class="clearfix grpelem" id="u1367" ng-click=openHostelDetailView(schoolHostels[1]._id)>
+        <!-- group -->
+        <div class="museBGSize grpelem" id="u1383">
+          <!-- simple frame -->
+        </div>
+        <div class="clearfix grpelem" id="pu1382-4">
+          <!-- column -->
+          <div class="clearfix colelem" id="u1382-4">
+            <!-- content -->
+            <p><span id="u1382">{{schoolHostels[1].name}}</span></p>
+          </div>
+          <div class="clearfix colelem" id="pu1381-12">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1381-12">
+              <!-- content -->
+              <p id="u1381-3">Available from <span id="u1381-2">January, 2016</span></p>
+              <p id="u1381-6">3.0km <span id="u1381-5">from {{schoolHostels[1].schoolRef.name}}</span></p>
+              <p id="u1381-9">10+<span id="u1381-8"> rooms available</span></p>
+              <p id="u1381-10">&nbsp;</p>
+            </div>
+            <div class="clearfix grpelem" id="u1368">
+              <!-- group -->
+              <img class="svg grpelem" id="u1369" title="Free Wi-Fi" src="images/wifi-14.svg" width="17" height="17" alt="" data-mu-svgfallback="images/wifi-14_poster_.png" />
+              <!-- svg -->
+              <img class="svg grpelem" id="u1379" title="Single Rooms" src="images/icons-15.svg" width="22" height="22" alt="" data-mu-svgfallback="images/icons-15_poster_.png" />
+              <!-- svg -->
+              <img class="svg grpelem" id="u1375" title="Shared Rooms" src="images/icons-16.svg" width="22" height="22" alt="" data-mu-svgfallback="images/icons-16_poster_.png" />
+              <!-- svg -->
+              <img class="svg grpelem" id="u1377" title="Entertainment System" src="images/icons-18.svg" width="18" height="18" alt="" data-mu-svgfallback="images/icons-18_poster_.png" />
+              <!-- svg -->
+              <img class="svg grpelem" id="u1373" title="Air Conditioning" src="images/icons-17.svg" width="15" height="15" alt="" data-mu-svgfallback="images/icons-17_poster_.png" />
+              <!-- svg -->
+              <img class="svg grpelem" id="u1371" title="Security" src="images/logo-20.svg" width="18" height="18" alt="" data-mu-svgfallback="images/logo-20_poster_.png" />
+              <!-- svg -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="verticalspacer"></div>
+  </div>
+</div>
+<div class="preload_images">
+  <img class="preload" src="images/instagram2-u1268-r-fr.png" alt="" />
+  <img class="preload" src="images/twitter-u1270-r-fr.png" alt="" />
+  <img class="preload" src="images/facebook-u1263-r-fr.png" alt="" />
+  <img class="preload" src="images/youtube-u1275-r-fr.png" alt="" />
+  <img class="preload" src="images/list%20your%20property%20button-custom%20active.png" alt="" />
+  <img class="preload" src="images/sign%20in2-custom%20active.png" alt="" />
+</div>
+<!-- JS includes -->
+<script type="text/javascript">
+if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+<script type="text/javascript">
+window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+<script src="scripts/museutils.js?334180058" type="text/javascript"></script>
+<script src="scripts/jquery.musepolyfill.bgsize.js?35732776" type="text/javascript"></script>
+<script src="scripts/jquery.watch.js?293013060" type="text/javascript"></script>
+<!-- Other scripts -->
+<script type="text/javascript">
+$(document).ready(function() {
+  try {
+    (function() {
+      var a = {},
+        b = function(a) {
+          if (a.match(/^rgb/)) return a = a.replace(/\s+/g, "").match(/([\d\,]+)/gi)[0].split(","), (parseInt(a[0]) << 16) + (parseInt(a[1]) << 8) + parseInt(a[2]);
+          if (a.match(/^\#/)) return parseInt(a.substr(1), 16);
+          return 0
+        };
+      (function() {
+        $('link[type="text/css"]').each(function() {
+          var b = ($(this).attr("href") || "").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);
+          b && b[1] && b[2] && (a[b[1]] = b[2])
+        })
+      })();
+      (function() {
+        $("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+        for (var c = $(".version"), d = 0; d < Muse.assets.required.length;) {
+          var f = Muse.assets.required[d],
+            g = f.match(/([\w\-\.]+)\.(\w+)$/),
+            k = g && g[1] ? g[1] : null,
+            g = g && g[2] ? g[2] : null;
+          switch (g.toLowerCase()) {
+            case "css":
+              k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
+              c.addClass(k);
+              var g = b(c.css("color")),
+                h = b(c.css("background-color"));
+              g != 0 || h != 0 ? (Muse.assets.required.splice(d, 1), "undefined" != typeof a[f] && (g != a[f] >>> 24 || h != (a[f] & 16777215)) && Muse.assets.outOfDate.push(f)) : d++;
+              c.removeClass(k);
+              break;
+            case "js":
+              k.match(/^jquery-[\d\.]+/gi) &&
+                typeof $ != "undefined" ? Muse.assets.required.splice(d, 1) : d++;
+              break;
+            default:
+              throw Error("Unsupported file type: " + g);
+          }
+        }
+        c.remove();
+        if (Muse.assets.outOfDate.length || Muse.assets.required.length) c = "Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.", (d = location && location.search && location.search.match && location.search.match(/muse_debug/gi)) && Muse.assets.outOfDate.length && (c += "\nOut of date: " + Muse.assets.outOfDate.join(",")), d && Muse.assets.required.length && (c += "\nMissing: " + Muse.assets.required.join(",")), alert(c)
+      })()
+    })();
+    /* body */
+    Muse.Utils.transformMarkupToFixBrowserProblemsPreInit(); /* body */
+    Muse.Utils.prepHyperlinks(true); /* body */
+    Muse.Utils.resizeHeight() /* resize height */
+    Muse.Utils.fullPage('#page'); /* 100% height page */
+    Muse.Utils.showWidgetsWhenReady(); /* body */
+    Muse.Utils.transformMarkupToFixBrowserProblems(); /* body */
+  } catch (e) {
+    if (e && 'function' == typeof e.notify) e.notify();
+    else Muse.Assert.fail('Error calling selector function:' + e);
+  }
+});
+</script>

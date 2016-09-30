@@ -1,0 +1,394 @@
+<div class="clearfix" id="page" ng-controller="homeCtrl" data-ng-init="getAllHostels(); signupCheck(); getAllSchools();">
+  <!-- column -->
+  <div class="position_content" id="page_position_content">
+    <div class="SlideShowWidget clearfix colelem" id="slideshowu75">
+      <!-- none box -->
+    </div>
+    <div class="clearfix colelem" id="ppu202">
+      <!-- group -->
+      <div class="grpelem" id="pu202">
+        <!-- inclusion -->
+        <div id="u202">
+          <!-- simple frame -->
+        </div>
+        <div class="clearfix" id="pu237">
+          <!-- column -->
+          <img class="svg colelem" id="u237" src="images/shape-05.svg" width="372" height="168" alt="" data-mu-svgfallback="images/shape-05_poster_.png" />
+          <!-- svg -->
+          <div>
+            <!-- svg -->
+            <select class="clearfix colelem" id="u246">
+              <option selected="">University</option>
+              <option>Covenant University</option>
+              <option>Bowen University</option>
+              <option>Babcock University</option>
+            </select>
+          </div>
+          <div class="shadow clearfix colelem" id="u247" ng-click=openHostelsForSchoolView(schools)>
+            <!-- group -->
+            <div class="clearfix grpelem" id="u259-4">
+              <!-- content -->
+              <p>SEARCH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="browser_width grpelem" id="u189-bw">
+        <div id="u189">
+          <!-- simple frame -->
+        </div>
+      </div>
+      <a class="nonblock nontext MuseLinkActive grpelem" id="u215" href="index.html">
+        <!-- svg --><img class="svg" src="images/logo-04.svg" width="292" height="89" alt="" data-mu-svgfallback="images/logo-04_poster_.png" /></a>
+      <!-- svg -->
+      <div class="clearfix grpelem" id="u285-4">
+        <!-- content -->
+        <p>Need a Bed? Food? Free Wifi?</p>
+      </div>
+      <div class="clearfix grpelem" id="u287-6">
+        <!-- content -->
+        <p>FIND YOUR&nbsp; <span id="u287-2">ACCOMMODATION</span> NOW</p>
+      </div>
+      <div class="clearfix grpelem" id="u528-4">
+        <!-- content -->
+        <p>With over 5,000 active listings, DormCoLet has the largest inventory of premium accommodation options for students of Tertiary Institutions in Nigeria</p>
+      </div>
+      <img class="svg grpelem" id="u529" src="images/start%20here-09.svg" width="592" height="136" alt="" data-mu-svgfallback="images/start%20here-09_poster_.png" />
+      <!-- svg -->
+    </div>
+    <div class="clearfix colelem" id="u618-4">
+      <!-- content -->
+      <p>OUR SERVICES</p>
+    </div>
+    <div class="colelem" id="u617">
+      <!-- simple frame -->
+    </div>
+    <div class="clearfix colelem" id="pu573">
+      <!-- group -->
+      <img class="svg grpelem" id="u573" src="images/pin-07.svg" width="63" height="67" alt="" data-mu-svgfallback="images/pin-07_poster_.png" />
+      <!-- svg -->
+      <img class="svg grpelem" id="u581" src="images/house-11.svg" width="61" height="66" alt="" data-mu-svgfallback="images/house-11_poster_.png" />
+      <!-- svg -->
+      <img class="svg grpelem" id="u587" src="images/customise-12.svg" width="61" height="66" alt="" data-mu-svgfallback="images/customise-12_poster_.png" />
+      <!-- svg -->
+      <img class="svg grpelem" id="u599" src="images/list-13.svg" width="61" height="66" alt="" data-mu-svgfallback="images/list-13_poster_.png" />
+      <!-- svg -->
+    </div>
+    <div class="clearfix colelem" id="pu608-4">
+      <!-- group -->
+      <div class="clearfix grpelem" id="u608-4">
+        <!-- content -->
+        <p>Find student accommodation</p>
+      </div>
+      <div class="clearfix grpelem" id="u609-4">
+        <!-- content -->
+        <p>Rent and Pay</p>
+      </div>
+      <div class="clearfix grpelem" id="u610-4">
+        <!-- content -->
+        <p>Setup and Arrange</p>
+      </div>
+      <div class="clearfix grpelem" id="u612-6">
+        <!-- content -->
+        <p>List your</p>
+        <p>properties</p>
+      </div>
+    </div>
+    <div class="clearfix colelem" id="u562-4">
+      <!-- content -->
+      <p>RECENTLY LISTED PROPERTIES</p>
+    </div>
+    <div class="colelem" id="u569">
+      <!-- simple frame -->
+    </div>
+    <div class="clearfix colelem" id="pu555">
+      <!-- group -->
+      <div class="museBGSize clearfix grpelem" id="u555" ng-click=openHostelDetailView(hostels[0]._id)>
+        <!-- group -->
+        <div class="grpelem" id="pu1399">
+          <!-- inclusion -->
+          <div id="u1399">
+            <!-- simple frame -->
+          </div>
+          <div class="clearfix" id="pu1400-5">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1428-5">
+              <!-- content -->
+              <p><span id="u1428">{{hostels[0].name}} |</span><span id="u1428-2"> {{hostels[0].location}}, {{hostels[0].schoolRef.name}}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="museBGSize clearfix grpelem" id="u556" ng-click=openHostelDetailView(hostels[1]._id)>
+        <!-- group -->
+        <div class="grpelem" id="pu1413">
+          <!-- inclusion -->
+          <div id="u1413">
+            <!-- simple frame -->
+          </div>
+          <div class="clearfix" id="pu1414-5">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1428-5">
+              <!-- content -->
+              <p><span id="u1428">{{hostels[1].name}} |</span><span id="u1428-2"> {{hostels[1].location}}, {{hostels[1].schoolRef.name}}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="museBGSize clearfix grpelem" id="u560" ng-click=openHostelDetailView(hostels[2]._id)>
+        <!-- group -->
+        <div class="grpelem" id="pu1415">
+          <!-- inclusion -->
+          <div id="u1415">
+            <!-- simple frame -->
+          </div>
+          <div class="clearfix" id="pu1416-5">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1428-5">
+              <!-- content -->
+              <p><span id="u1428">{{hostels[2].name}} |</span><span id="u1428-2"> {{hostels[2].location}}, {{hostels[2].schoolRef.name}}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix colelem" id="u620-4">
+      <!-- content -->
+      <p>FEATURED</p>
+    </div>
+    <div class="colelem" id="u622">
+      <!-- simple frame -->
+    </div>
+    <div class="clearfix colelem" id="pu619">
+      <!-- group -->
+      <div class="museBGSize clearfix grpelem" id="u619">
+        <!-- group -->
+        <div class="grpelem" id="pu1427">
+          <!-- inclusion -->
+          <div id="u1427">
+            <!-- simple frame -->
+          </div>
+          <div class="clearfix" id="pu1428-5" ng-click=openHostelDetailView(hostels[0]._id)>
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1428-5">
+              <!-- content -->
+              <p><span id="u1428">{{hostels[0].name}} |</span><span id="u1428-2"> {{hostels[0].location}}, {{hostels[0].schoolRef.name}}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="museBGSize clearfix grpelem" id="u621">
+        <!-- group -->
+        <div class="grpelem" id="pu1425">
+          <!-- inclusion -->
+          <div id="u1425">
+            <!-- simple frame -->
+          </div>
+          <div class="clearfix" id="pu1426-5">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1426-5">
+              <!-- content -->
+              <p><span id="u1426">Elegant Hostels |</span><span id="u1426-2"> Unilag, LUTH, Yabatech</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="museBGSize clearfix grpelem" id="u623">
+        <!-- group -->
+        <div class="grpelem" id="pu1423">
+          <!-- inclusion -->
+          <div id="u1423">
+            <!-- simple frame -->
+          </div>
+          <div class="clearfix" id="pu1424-5">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u1424-5">
+              <!-- content -->
+              <p><span id="u1424">Elegant Hostels |</span><span id="u1424-2"> Unilag, LUTH, Yabatech</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix colelem" id="u748-4">
+      <!-- content -->
+      <p>Hot Offer Today</p>
+    </div>
+    <div class="colelem" id="u749">
+      <!-- simple frame -->
+    </div>
+    <div class="clearfix colelem" id="u753">
+      <!-- group -->
+      <div class="clearfix grpelem" id="pu755-9">
+        <!-- column -->
+        <div class="clearfix colelem" id="u755-9">
+          <!-- content -->
+          <p id="u755-2">HOSTEL</p>
+          <p id="u755-4">{{hostels[2].name}}</p>
+          <p id="u755-7"><span id="u755-5">{{hostels[2].location }}</span><span id="u755-6"> Lagos</span></p>
+        </div>
+        <div class="rounded-corners clearfix colelem" id="u756">
+          <!-- group -->
+          <div class="clearfix grpelem" id="u757-4" ng-click=openHostelDetailView(hostels[2]._id)>
+            <!-- content -->
+            <p>View Details</p>
+          </div>
+        </div>
+        <div class="clearfix colelem" id="u884">
+          <!-- group -->
+          <div class="clearfix grpelem" id="pu771">
+            <!-- column -->
+            <img class="svg colelem" id="u771" title="Free Wi-Fi" src="images/wifi-14.svg" width="17" height="17" alt="" data-mu-svgfallback="images/wifi-14_poster_.png" />
+            <!-- svg -->
+            <img class="svg colelem" id="u807" title="Air Conditioning" src="images/icons-17.svg" width="15" height="15" alt="" data-mu-svgfallback="images/icons-17_poster_.png" />
+            <!-- svg -->
+            <img class="svg colelem" id="u861" title="Security" src="images/logo-20.svg" width="18" height="18" alt="" data-mu-svgfallback="images/logo-20_poster_.png" />
+            <!-- svg -->
+          </div>
+          <div class="clearfix grpelem" id="pu777">
+            <!-- column -->
+            <img class="svg colelem" id="u777" title="Single Rooms" src="images/icons-15.svg" width="22" height="22" alt="" data-mu-svgfallback="images/icons-15_poster_.png" />
+            <!-- svg -->
+            <img class="svg colelem" id="u804" title="Entertainment System" src="images/icons-18.svg" width="18" height="18" alt="" data-mu-svgfallback="images/icons-18_poster_.png" />
+            <!-- svg -->
+            <img class="svg colelem" id="u801" title="24/7 Power" src="images/icons-19.svg" width="15" height="15" alt="" data-mu-svgfallback="images/icons-19_poster_.png" />
+            <!-- svg -->
+          </div>
+          <img class="svg grpelem" id="u780" title="Shared Rooms" src="images/icons-16.svg" width="22" height="22" alt="" data-mu-svgfallback="images/icons-16_poster_.png" />
+          <!-- svg -->
+        </div>
+      </div>
+      <div class="museBGSize clearfix grpelem" id="u750">
+        <!-- group -->
+        <div class="grpelem" id="pu759">
+          <!-- inclusion -->
+          <div id="u759">
+            <!-- simple frame -->
+          </div>
+          <div class="clearfix" id="pu760-5">
+            <!-- group -->
+            <div class="clearfix grpelem" id="u760-5">
+              <!-- content -->
+              <p><span id="u760">Institutions near us : </span>University of Lagos, Yaba College of Technology, Lagos University Teaching Hospital</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="preload_images">
+  <img class="preload" src="images/instagram2-u1268-r-fr.png" alt="" />
+  <img class="preload" src="images/twitter-u1270-r-fr.png" alt="" />
+  <img class="preload" src="images/facebook-u1263-r-fr.png" alt="" />
+  <img class="preload" src="images/youtube-u1275-r-fr.png" alt="" />
+  <img class="preload" src="images/list%20your%20property%20button-custom%20active.png" alt="" />
+  <img class="preload" src="images/sign%20in2-custom%20active.png" alt="" />
+</div>
+<!-- JS includes -->
+<script type="text/javascript">
+if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+<script type="text/javascript">
+window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+<script src="scripts/museutils.js?334180058" type="text/javascript"></script>
+<script src="scripts/jquery.musepolyfill.bgsize.js?35732776" type="text/javascript"></script>
+<script src="scripts/webpro.js?7309900" type="text/javascript"></script>
+<script src="scripts/musewpslideshow.js?4149944274" type="text/javascript"></script>
+<script src="scripts/jquery.museoverlay.js?4282111687" type="text/javascript"></script>
+<script src="scripts/touchswipe.js?526709374" type="text/javascript"></script>
+<script src="scripts/jquery.watch.js?293013060" type="text/javascript"></script>
+<!-- Other scripts -->
+<script type="text/javascript">
+$(document).ready(function() {
+  try {
+    (function() {
+      var a = {},
+        b = function(a) {
+          if (a.match(/^rgb/)) return a = a.replace(/\s+/g, "").match(/([\d\,]+)/gi)[0].split(","), (parseInt(a[0]) << 16) + (parseInt(a[1]) << 8) + parseInt(a[2]);
+          if (a.match(/^\#/)) return parseInt(a.substr(1), 16);
+          return 0
+        };
+      (function() {
+        $('link[type="text/css"]').each(function() {
+          var b = ($(this).attr("href") || "").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);
+          b && b[1] && b[2] && (a[b[1]] = b[2])
+        })
+      })();
+      (function() {
+        $("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+        for (var c = $(".version"), d = 0; d < Muse.assets.required.length;) {
+          var f = Muse.assets.required[d],
+            g = f.match(/([\w\-\.]+)\.(\w+)$/),
+            k = g && g[1] ? g[1] : null,
+            g = g && g[2] ? g[2] : null;
+          switch (g.toLowerCase()) {
+            case "css":
+              k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
+              c.addClass(k);
+              var g = b(c.css("color")),
+                h = b(c.css("background-color"));
+              g != 0 || h != 0 ? (Muse.assets.required.splice(d, 1), "undefined" != typeof a[f] && (g != a[f] >>> 24 || h != (a[f] & 16777215)) && Muse.assets.outOfDate.push(f)) : d++;
+              c.removeClass(k);
+              break;
+            case "js":
+              k.match(/^jquery-[\d\.]+/gi) &&
+                typeof $ != "undefined" ? Muse.assets.required.splice(d, 1) : d++;
+              break;
+            default:
+              throw Error("Unsupported file type: " + g);
+          }
+        }
+        c.remove();
+        if (Muse.assets.outOfDate.length || Muse.assets.required.length) c = "Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.", (d = location && location.search && location.search.match && location.search.match(/muse_debug/gi)) && Muse.assets.outOfDate.length && (c += "\nOut of date: " + Muse.assets.outOfDate.join(",")), d && Muse.assets.required.length && (c += "\nMissing: " + Muse.assets.required.join(",")), alert(c)
+      })()
+    })();
+    /* body */
+    Muse.Utils.transformMarkupToFixBrowserProblemsPreInit(); /* body */
+    Muse.Utils.prepHyperlinks(true); /* body */
+    Muse.Utils.initWidget('#slideshowu75', function(elem) {
+      $(elem).data('widget', new WebPro.Widget.ContentSlideShow(elem, {
+        heroFitting: 'fillFrameProportionally',
+        autoPlay: true,
+        displayInterval: 3500,
+        slideLinkStopsSlideShow: false,
+        transitionStyle: 'fading',
+        lightboxEnabled_runtime: false,
+        shuffle: false,
+        transitionDuration: 500,
+        enableSwipe: true,
+        elastic: 'fullWidth',
+        resumeAutoplay: true,
+        resumeAutoplayInterval: 3000,
+        playOnce: false,
+        autoActivate_runtime: false
+      }));
+    }); /* #slideshowu75 */
+    Muse.Utils.resizeHeight() /* resize height */
+    Muse.Utils.initWidget('#slideshowu887', function(elem) {
+      $(elem).data('widget', new WebPro.Widget.ContentSlideShow(elem, {
+        autoPlay: true,
+        displayInterval: 4000,
+        slideLinkStopsSlideShow: false,
+        transitionStyle: 'horizontal',
+        lightboxEnabled_runtime: false,
+        shuffle: false,
+        transitionDuration: 500,
+        enableSwipe: true,
+        elastic: 'off',
+        resumeAutoplay: true,
+        resumeAutoplayInterval: 4000,
+        playOnce: false,
+        autoActivate_runtime: false
+      }));
+    }); /* #slideshowu887 */
+    Muse.Utils.fullPage('#page'); /* 100% height page */
+    Muse.Utils.showWidgetsWhenReady(); /* body */
+    Muse.Utils.transformMarkupToFixBrowserProblems(); /* body */
+  } catch (e) {
+    if (e && 'function' == typeof e.notify) e.notify();
+    else Muse.Assert.fail('Error calling selector function:' + e);
+  }
+});
+</script>

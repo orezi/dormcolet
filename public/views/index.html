@@ -1,0 +1,135 @@
+<!-- public/views/index.html -->
+<!doctype html>
+<html class="html" lang="en-US" ng-app="dormcolet">
+
+<head>
+  <script type="text/javascript">
+  if (typeof Muse == "undefined") window.Muse = {};
+  window.Muse.assets = {
+    "required": ["jquery-1.8.3.min.js", "museutils.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "index.css", "hostel.css", "signinregister.css", "search.css"],
+    "outOfDate": []
+  };
+  </script>
+  <script src="libs/angular/angular.js"></script>
+  <script src="libs/angular-route/angular-route.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="libs/angular-aria/angular-aria.js"></script>
+  <script src="libs/angular-messages/angular-messages.js"></script>
+  <script src="libs/angular-animate/angular-animate.js"></script>
+  <script src="libs/angular-material/angular-material.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/services/user.service.js"></script>
+  <script src="js/services/school.service.js"></script>
+  <script src="js/services/hostel.service.js"></script>
+  <script src="js/services/room.service.js"></script>
+  <script src="js/controllers/home.controller.js"></script>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <meta name="generator" content="2015.0.1.310" />
+  <title>Home</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?4052507572" />
+  <link rel="stylesheet" type="text/css" href="css/master_a-master.css?4172345413" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" id="pagesheet" />
+  <link rel="stylesheet" type="text/css" href="css/hostel.css" />
+  <link rel="stylesheet" type="text/css" href="css/signinregister.css" />
+  <link rel="stylesheet" type="text/css" href="css/search.css?4097176803" id="pagesheet" />
+  <!-- Other scripts -->
+  <script type="text/javascript">
+  document.documentElement.className += ' js';
+  var __adobewebfontsappname__ = "muse";
+  </script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+  document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/antic-slab:n4:default.js" type="text/javascript">\x3C/script>');
+  </script>
+  <title>Starter MEAN Single Page Application</title>
+</head>
+
+<body ng-controller="homeCtrl">
+  <div class="clearfix pinned-colelem" id="u1278">
+    <!-- group -->
+    <div class="clearfix grpelem" id="pu1280">
+      <!-- group -->
+      <div class="browser_width" id="u1280-bw">
+        <div id="u1280">
+          <!-- simple frame -->
+        </div>
+      </div>
+      <div class="museBGSize" id="u1284">
+        <!-- simple frame -->
+      </div>
+      <div class="museBGSize" id="u1286">
+        <!-- simple frame -->
+      </div>
+      <div class="museBGSize" id="u1279">
+        <!-- simple frame -->
+      </div>
+      <div class="museBGSize" id="u1291">
+        <!-- simple frame -->
+      </div>
+      <div class="museBGSize" id="u1287">
+        <!-- simple frame -->
+      </div>
+      <div ng-if="!firstname" class="museBGSize" id="u1274" ui-sref="authenticate">
+        <!-- simple frame -->
+      </div>
+      <div ng-if="firstname" class="museBGSize" id="uuuu1">
+        Welcome {{firstname | lowercase}}
+      </div>
+      <div ng-if="firstname" class="museBGSize" id="uu1274" ng-click="logout()">
+      </div>
+    </div>
+    <div class="clearfix grpelem" id="pu1288">
+      <!-- group -->
+      <a class="nonblock nontext grpelem" id="u1288" href="index.html">
+        <!-- svg --><img class="svg" src="images/logo-04.svg" width="108" height="33" alt="" data-mu-svgfallback="images/logo-04_poster_.png" /></a>
+      <div class="grpelem" id="pu1285">
+        <!-- inclusion -->
+        <div id="u1285">
+          <!-- simple frame -->
+        </div>
+        <div class="clearfix" id="pu1281">
+          <!-- group -->
+          <img class="svg grpelem" id="u1281" src="images/phone-08.svg" width="14" height="14" alt="" data-mu-svgfallback="images/phone-08_poster_.png" />
+          <!-- svg -->
+          <div class="clearfix grpelem" id="u1283-4">
+            <!-- content -->
+            <p>+(234) - 706 - 052 - 2696</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ui-view></div>
+  <div class="browser_width colelem" id="u963-bw">
+    <div id="u963">
+      <!-- group -->
+      <div class="clearfix" id="u963_align_to_page">
+        <img class="svg grpelem" id="u964" src="images/logo-01.svg" width="188" height="52" alt="" data-mu-svgfallback="images/logo-01_poster_.png" />
+        <!-- svg -->
+        <div class="clearfix grpelem" id="u976">
+          <!-- group -->
+          <div class="clearfix grpelem" id="u970-4">
+            <!-- content -->
+            <p>Home</p>
+          </div>
+          <div class="clearfix grpelem" id="u972-4">
+            <!-- content -->
+            <p>Preview</p>
+          </div>
+          <div class="clearfix grpelem" id="u974-4">
+            <!-- content -->
+            <p>Terms &amp; Conditions</p>
+          </div>
+          <div class="clearfix grpelem" id="u975-4">
+            <!-- content -->
+            <p>Contact</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
