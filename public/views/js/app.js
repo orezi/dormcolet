@@ -1,6 +1,6 @@
 "use strict";
 // public/js/app.js
-angular.module('dormcolet', ['ui.router', 'ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria'])
+angular.module('dormcolet', ['ui.router', 'ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria', 'timer'])
   .config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
