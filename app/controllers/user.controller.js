@@ -5,6 +5,7 @@ var User = mongoose.model('User');
 var jwt = require('jsonwebtoken');
 var config = require('../../config/db');
 var session = ('express-session');
+var nodemailer = require('nodemailer');
 
 var UserController = function() {}
 
@@ -56,6 +57,38 @@ UserController.prototype.authenticate = function(req, res) {
       }
     } else {
       return;
+    }
+  });
+};
+
+UserController.prototype.sendTourMail = function(req, res) {
+  User.findById(req.decoded._doc._id, function(err, user) {
+    if (err) {
+      res.status(500).send(err);
+    } if (user) {
+      var transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+          user: 'physiocraft.noreply@gmail.com',
+          pass: '#Physio.noreply'
+        }
+      });
+      var mailOptions = {
+        from: 'Dormcolet ✔ <no-reply@dormcolet.com>',
+        to: user.email,
+        subject: 'Tour from Dormcolet',
+        text: 'Tour details',
+        html: '<b> Hello ' + user.firstname + ',\n These are the details of your tour \n' +
+          'Click <a href="https://google.com"> here</a> to confirm user details</b>'
+      };
+
+      transporter.sendMail(mailOptions, function(error, info) {
+        if (error) {
+          console.log(error);
+        } else {
+          console.log('message sent: ' + info);
+        }
+      });
     }
   });
 };

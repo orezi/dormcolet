@@ -20,6 +20,11 @@ angular.module('dormcolet', ['ui.router', 'ngMaterial', 'ngMessages', 'ngAnimate
         templateUrl: '../search.html',
         controller: 'homeCtrl'
       })
+      .state('sendMail', {
+        url: '/sendmail',
+        templateUrl: '../sendmail.html',
+        controller: 'homeCtrl'
+      })
       .state('hostelDetails', {
         url: '/hostel/:hostel_id',
         templateUrl: '../hostel.html',

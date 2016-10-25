@@ -33,6 +33,10 @@ angular.module("dormcolet")
       createUser: function(newUser) {
         return $http.post("/api/users", newUser);
       },
+      sendMail: function() {
+        var token = localStorage.getItem("userToken");
+        return $http.post("/api/sendMail/?token=" + token);
+      },
       decodeUser: function() {
         if (localStorage.getItem("userToken")) {
           var token = localStorage.getItem("userToken");

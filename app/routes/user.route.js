@@ -12,6 +12,9 @@ module.exports = function(app) {
 
   router.route('/authenticate')
     .post(user.authenticate);
+  
+  router.route('/sendMail')
+    .post(user.verifyToken, user.sendTourMail);
 
   router.route('/user/:userId')
     .get(user.verifyToken, user.getUser)

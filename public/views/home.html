@@ -1,4 +1,4 @@
-<div class="clearfix" id="page" ng-controller="homeCtrl" data-ng-init="getAllHostels(); signupCheck(); getAllSchools();">
+<div class="clearfix" id="page" ng-controller="homeCtrl" data-ng-init="getAllHostels(); signupCheck(); getAllSchools(); loadSlideshow();">
   <!-- column -->
   <div class="position_content" id="page_position_content">
     <div class="SlideShowWidget clearfix colelem" id="slideshowu75">
@@ -41,12 +41,11 @@
       <a class="nonblock nontext MuseLinkActive grpelem" id="u215" href="index.html">
         <!-- svg --><img class="svg" src="images/logo-04.svg" width="292" height="89" alt="" data-mu-svgfallback="images/logo-04_poster_.png" /></a>
       <!-- svg -->
-      <div class="clearfix grpelem" id="u285-4" style="font-size: 40px;">
+      <div class="clearfix grpelem" id="u285-4">
         <!-- content -->
-        Need a bed? Food?<br>
-        Launch Date: <br> 
-        <timer end-time="1477468800000">{{days}} day(s), {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
-
+        Need a bed?
+        <br> Food? Free Wifi?
+        <br>
       </div>
       <div class="clearfix grpelem" id="u287-6">
         <!-- content -->
@@ -58,8 +57,32 @@
       <img class="svg grpelem" id="u529" src="images/start%20here-09.svg" width="592" height="136" alt="" data-mu-svgfallback="images/start%20here-09_poster_.png" />
       <!-- svg -->
     </div>
+    <div class="clearfix colelem" id="slides">
+      <img src="images/book_a_tour.jpg">
+      <img src="images/find_a_room.jpg">
+      <img src="images/find_a_roomate.jpg">
+      <img src="images/design_your_room.jpg">
+    </div>
     <div class="clearfix colelem" id="u618-4">
       <!-- content -->
+      <timer end-time="1477900800000" id="clockdiv">
+        <div>
+          <span class="days">{{days}}</span>
+          <div class="smalltext">Days</div>
+        </div>
+        <div>
+          <span class="hours">{{hours}}</span>
+          <div class="smalltext">Hours</div>
+        </div>
+        <div>
+          <span class="minutes">{{minutes}}</span>
+          <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+          <span class="seconds">{{seconds}}</span>
+          <div class="smalltext">Seconds</div>
+        </div>
+      </timer>
       <p>OUR SERVICES</p>
     </div>
     <div class="colelem" id="u617">

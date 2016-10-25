@@ -1054,7 +1054,6 @@
 
 #pu1204
 {
-	width: 0.01px;
 	margin-left: 20px;
 	margin-top: 72px;
 }
@@ -1220,7 +1219,7 @@
 
 #u1167
 {
-	z-index: 52;
+	z-index: 24;
 	width: 91px;
 	-pie-box-shadow: 0px 2px 2px #DCA299;
 	box-shadow: 0px 2px 2px rgba(185,69,52,0.5);

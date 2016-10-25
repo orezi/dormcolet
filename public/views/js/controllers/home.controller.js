@@ -7,9 +7,44 @@ angular.module("dormcolet")
       });
     };
 
+    $scope.loadSlideshow = function() {
+      $("#slides").slidesjs({
+        width: 1024,
+        height: 250,
+        play: {
+          active: false,
+          effect: "slide",
+          interval: 5000,
+          auto: true,
+          swap: true,
+          pauseOnHover: true,
+          restartDelay: 2500
+        },
+        pagination: {
+          active: false,
+          effect: "slide"
+        },
+        navigation: {
+          active: false,
+          effect: "slide"
+        }
+      });
+    }
+
     $scope.getHostel = function() {
       HostelService.getHostel($stateParams.hostel_id).then(function(res) {
         $scope.hostel = res.data[0];
+      });
+    };
+
+    $scope.openSendMailView = function() {
+      $state.go('sendMail');
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
+    $scope.sendMail = function() {
+      UserService.sendMail().then(function(res) {
+        console.log("res", res);
+        $scope.mail = res;
       });
     };
 
@@ -17,8 +52,8 @@ angular.module("dormcolet")
       HostelService.getHostelsForSchool($stateParams.school_id).then(function(res) {
         $scope.schoolHostels = res.data;
         console.log("shoo", res.data);
-      })
-    }
+      });
+    };
 
     $scope.openHostelDetailView = function(hostelId) {
       $state.go('hostelDetails', {
