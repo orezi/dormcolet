@@ -10,29 +10,6 @@
   background-color: #FFFFFF;
 }
 
-#clockdiv {
-  font-family: sans-serif;
-  color: #fff;
-  display: inline-block;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px;
-}
-
-#clockdiv > div {
-  padding: 10px;
-  border-radius: 3px;
-  background: #00BF96;
-  display: inline-block;
-}
-
-#clockdiv div > span {
-  padding: 15px;
-  border-radius: 3px;
-  background: #00816A;
-  display: inline-block;
-}
-
 #page {
   z-index: 1;
   width: 1024px;
@@ -617,7 +594,7 @@
 
 #clockdiv {
   width: 435px;
-  margin-left: -128px;
+  margin-left: 0px;
   margin-bottom: 20px;
   font-family: sans-serif;
   color: #fff;
@@ -660,6 +637,15 @@
   margin-right: -10000px;
   margin-top: 152px;
   left: 100px;
+}
+
+#rooms{
+  width: 540px !important; 
+  min-height: 158px;
+  font-size: 50px;
+  line-height: 76px;
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
 }
 
 #u287-6 {
@@ -718,7 +704,7 @@
 
 #u618-4 {
   z-index: 88;
-  width: 174px;
+  width: 1183px;
   min-height: 22px;
   background-color: transparent;
   color: #1A1A1A;
@@ -726,8 +712,8 @@
   text-align: center;
   font-family: open-sans, sans-serif;
   font-weight: 700;
-  margin-left: 425px;
-  margin-top: 53px;
+  margin-left: -73px;
+  margin-top: -27px;
   position: relative;
 }
 

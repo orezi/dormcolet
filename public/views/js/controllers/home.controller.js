@@ -1,6 +1,6 @@
 "use strict";
 angular.module("dormcolet")
-  .controller("homeCtrl", ["$scope", "$rootScope", "$location", "$state", "$mdToast", "$stateParams", "SchoolService", "UserService", "HostelService", "RoomService", function($scope, $rootScope, $location, $state, $mdToast, $stateParams, SchoolService, UserService, HostelService, RoomService) {
+  .controller("homeCtrl", ["$scope", "$mdDialog", "$rootScope", "$location", "$state", "$mdToast", "$stateParams", "SchoolService", "UserService", "HostelService", "RoomService", function($scope, $mdDialog, $rootScope, $location, $state, $mdToast, $stateParams, SchoolService, UserService, HostelService, RoomService) {
     $scope.getAllHostels = function() {
       HostelService.getAllHostels().then(function(res) {
         $scope.hostels = res.data;
@@ -14,7 +14,7 @@ angular.module("dormcolet")
         play: {
           active: false,
           effect: "slide",
-          interval: 5000,
+          interval: 3000,
           auto: true,
           swap: true,
           pauseOnHover: true,
@@ -31,19 +31,27 @@ angular.module("dormcolet")
       });
     }
 
+    $scope.showAlert = function(ev) {
+      $scope.sendMail();
+      $mdDialog.show(
+        $mdDialog.alert()
+        .clickOutsideToClose(true)
+        .title('Request Tour')
+        .textContent('Thank you for requesting tour, please check email for tour details')
+        .ariaLabel('Alert Dialog Demo')
+        .ok('Got it!')
+        .targetEvent(ev)
+      );
+    };
+
     $scope.getHostel = function() {
       HostelService.getHostel($stateParams.hostel_id).then(function(res) {
         $scope.hostel = res.data[0];
       });
     };
 
-    $scope.openSendMailView = function() {
-      $state.go('sendMail');
-      document.body.scrollTop = document.documentElement.scrollTop = 0;
-    }
     $scope.sendMail = function() {
       UserService.sendMail().then(function(res) {
-        console.log("res", res);
         $scope.mail = res;
       });
     };
@@ -135,6 +143,11 @@ angular.module("dormcolet")
             .hideDelay(3000)
           );
         } else {
+          $mdToast.show(
+            $mdToast.simple()
+            .content("Login successful!")
+            .hideDelay(3000)
+          );
           //set token in localstorage
           localStorage.setItem("userToken", res.data.token);
           if (localStorage.getItem("userToken")) {
@@ -144,17 +157,6 @@ angular.module("dormcolet")
       });
     };
 
-    $("#slideshow > div:gt(0)").hide();
-
-    setInterval(function() {
-      $('#slideshow > div:first')
-        .fadeOut(5000)
-        .next()
-        .fadeIn(5000)
-        .end()
-        .appendTo('#slideshow');
-    }, 3000);
-
     $scope.getAllSchools = function() {
       SchoolService.getAllSchools().then(function(res) {
         $scope.schools = res.data;
@@ -162,6 +164,11 @@ angular.module("dormcolet")
     };
 
     $scope.logout = function() {
+      $mdToast.show(
+        $mdToast.simple()
+        .content("You've been logged out!")
+        .hideDelay(3000)
+      );
       $scope.isLoggedIn = true;
       localStorage.removeItem("userToken");
       if (localStorage.getItem("userToken")) {
@@ -196,7 +203,7 @@ angular.module("dormcolet")
           $mdToast.show(
             $mdToast.simple()
             .content("Registration complete!")
-            .hideDelay(5000)
+            .hideDelay(3000)
           ).then(function() {
             $scope.loginUser({
               email: newUser.email,

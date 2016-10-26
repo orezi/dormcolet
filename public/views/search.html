@@ -4,10 +4,10 @@
     <div layout="row">
       <!-- svg -->
       <select class="clearfix colelem" id="u1301">
-        <option selected="">University</option>
-        <option>Covenant University</option>
-        <option>Bowen University</option>
-        <option>Babcock University</option>
+        <option selected="">Location</option>
+        <option>Ekosodin</option>
+        <option>BDPA</option>
+        <option>Osasodie</option>
       </select>
       <div class="shadow clearfix colelem" id="uu247" ng-click=searchHostelsForSchoolView(schools)>
         <!-- group -->
@@ -22,7 +22,7 @@
     </div>
     <div class="clearfix colelem" id="pu1366">
       <!-- group -->
-      <div ng-if=!schoolHostels[0] class="hostel-title">No hostels listed for this school yet</div>
+      <div ng-if=!schoolHostels[0] class="hostel-title">No hostels listed for this location yet</div>
       <div ng-if="schoolHostels[0]" class="clearfix grpelem" id="u1366" ng-click=openHostelDetailView(schoolHostels[0]._id)>
         <!-- group -->
         <div class="museBGSize grpelem" id="u1338">

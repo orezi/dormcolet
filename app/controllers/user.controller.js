@@ -65,7 +65,8 @@ UserController.prototype.sendTourMail = function(req, res) {
   User.findById(req.decoded._doc._id, function(err, user) {
     if (err) {
       res.status(500).send(err);
-    } if (user) {
+    }
+    if (user) {
       var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
@@ -93,9 +94,36 @@ UserController.prototype.sendTourMail = function(req, res) {
   });
 };
 
+UserController.prototype.sendWelcomeMail = function(req, res) {
+  var transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: 'physiocraft.noreply@gmail.com',
+      pass: '#Physio.noreply'
+    }
+  });
+  var data = req.body;
+  var mailOptions = {
+    from: 'Dormcolet ✔ <no-reply@dormcolet.com>',
+    to: data.email,
+    subject: 'Welcome to Dormcolet',
+    text: 'Sign up successful',
+    html: '<b> Hello ' + data.firstname + ',\n Thank you for signing up to Dormcolet! \n' +
+      'Click <a href="https://dormcolet.herokuapp.com"> here</a> to find your perfect hostel and room!</b>'
+  };
+
+  transporter.sendMail(mailOptions, function(error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('message sent: ' + info);
+    }
+  });
+};
+
 UserController.prototype.createUser = function(req, res) {
   if (!req.body.firstname || !req.body.lastname || !req.body.email || !req.body.password) {
-    return res.status(422).send({
+    res.json({
       success: false,
       message: 'Check parameters!'
     });
@@ -115,6 +143,7 @@ UserController.prototype.createUser = function(req, res) {
         if (err) {
           return res.json(err);
         }
+        UserController.prototype.sendWelcomeMail(req, res);
         return res.json(user);
       });
     }
